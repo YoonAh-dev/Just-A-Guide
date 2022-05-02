@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello")
-            .font(Font(uiFont: .font(.sansationLight, ofSize: 30)))
     }
 }
 

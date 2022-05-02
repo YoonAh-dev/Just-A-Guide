@@ -18,6 +18,7 @@
 		B527BF35281F6BC400AFA8DA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B527BF32281F6BC400AFA8DA /* NotoSans-Regular.ttf */; };
 		B527BF37281F6BEE00AFA8DA /* Sansation_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B527BF36281F6BEE00AFA8DA /* Sansation_Light.ttf */; };
 		B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF39281F6C7000AFA8DA /* Font+Extension.swift */; };
+		B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF3C281F737900AFA8DA /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B527BF36281F6BEE00AFA8DA /* Sansation_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sansation_Light.ttf; sourceTree = "<group>"; };
 		B527BF38281F6C1C00AFA8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B527BF39281F6C7000AFA8DA /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		B527BF3C281F737900AFA8DA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				B527BF39281F6C7000AFA8DA /* Font+Extension.swift */,
+				B527BF3C281F737900AFA8DA /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */,
+				B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */,
 				B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */,
 				B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */,
 				B527BF13281F614C00AFA8DA /* ContentView.swift in Sources */,
