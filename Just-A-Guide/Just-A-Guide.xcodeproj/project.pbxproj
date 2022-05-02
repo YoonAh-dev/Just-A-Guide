@@ -55,11 +55,10 @@
 		B527BF0F281F614C00AFA8DA /* Just-A-Guide */ = {
 			isa = PBXGroup;
 			children = (
-				B527BF10281F614C00AFA8DA /* Just_A_GuideApp.swift */,
-				B527BF12281F614C00AFA8DA /* ContentView.swift */,
-				B527BF14281F614D00AFA8DA /* Assets.xcassets */,
-				B527BF19281F614D00AFA8DA /* Persistence.swift */,
-				B527BF1B281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld */,
+				B527BF26281F654900AFA8DA /* Network */,
+				B527BF25281F64FD00AFA8DA /* Screens */,
+				B527BF24281F64F900AFA8DA /* Global */,
+				B527BF23281F64F300AFA8DA /* Resource */,
 				B527BF16281F614D00AFA8DA /* Preview Content */,
 			);
 			path = "Just-A-Guide";
@@ -71,6 +70,111 @@
 				B527BF17281F614D00AFA8DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B527BF23281F64F300AFA8DA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF2C281F65E900AFA8DA /* Fonts */,
+				B527BF14281F614D00AFA8DA /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B527BF24281F64F900AFA8DA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF2B281F65D900AFA8DA /* Literal */,
+				B527BF2A281F65D500AFA8DA /* Extension */,
+				B527BF29281F65CF00AFA8DA /* UIComponent */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		B527BF25281F64FD00AFA8DA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF10281F614C00AFA8DA /* Just_A_GuideApp.swift */,
+				B527BF12281F614C00AFA8DA /* ContentView.swift */,
+				B527BF2F281F677600AFA8DA /* MyComponent */,
+				B527BF2E281F677000AFA8DA /* Canvas */,
+				B527BF2D281F666900AFA8DA /* Factory */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B527BF26281F654900AFA8DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF19281F614D00AFA8DA /* Persistence.swift */,
+				B527BF28281F656100AFA8DA /* Storage */,
+				B527BF27281F655A00AFA8DA /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B527BF27281F655A00AFA8DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B527BF28281F656100AFA8DA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF1B281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B527BF29281F65CF00AFA8DA /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		B527BF2A281F65D500AFA8DA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B527BF2B281F65D900AFA8DA /* Literal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Literal;
+			sourceTree = "<group>";
+		};
+		B527BF2C281F65E900AFA8DA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B527BF2D281F666900AFA8DA /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B527BF2E281F677000AFA8DA /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		B527BF2F281F677600AFA8DA /* MyComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
