@@ -13,6 +13,11 @@
 		B527BF18281F614D00AFA8DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B527BF17281F614D00AFA8DA /* Preview Assets.xcassets */; };
 		B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF19281F614D00AFA8DA /* Persistence.swift */; };
 		B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B527BF1B281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld */; };
+		B527BF33281F6BC400AFA8DA /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B527BF30281F6BC300AFA8DA /* NotoSans-Bold.ttf */; };
+		B527BF34281F6BC400AFA8DA /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B527BF31281F6BC400AFA8DA /* NotoSans-SemiBold.ttf */; };
+		B527BF35281F6BC400AFA8DA /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B527BF32281F6BC400AFA8DA /* NotoSans-Regular.ttf */; };
+		B527BF37281F6BEE00AFA8DA /* Sansation_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B527BF36281F6BEE00AFA8DA /* Sansation_Light.ttf */; };
+		B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF39281F6C7000AFA8DA /* Font+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,12 @@
 		B527BF17281F614D00AFA8DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B527BF19281F614D00AFA8DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B527BF1C281F614D00AFA8DA /* Just_A_Guide.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Just_A_Guide.xcdatamodel; sourceTree = "<group>"; };
+		B527BF30281F6BC300AFA8DA /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		B527BF31281F6BC400AFA8DA /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		B527BF32281F6BC400AFA8DA /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		B527BF36281F6BEE00AFA8DA /* Sansation_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sansation_Light.ttf; sourceTree = "<group>"; };
+		B527BF38281F6C1C00AFA8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B527BF39281F6C7000AFA8DA /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,7 @@
 		B527BF0F281F614C00AFA8DA /* Just-A-Guide */ = {
 			isa = PBXGroup;
 			children = (
+				B527BF38281F6C1C00AFA8DA /* Info.plist */,
 				B527BF26281F654900AFA8DA /* Network */,
 				B527BF25281F64FD00AFA8DA /* Screens */,
 				B527BF24281F64F900AFA8DA /* Global */,
@@ -138,6 +150,7 @@
 		B527BF2A281F65D500AFA8DA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B527BF39281F6C7000AFA8DA /* Font+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -152,6 +165,10 @@
 		B527BF2C281F65E900AFA8DA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				B527BF36281F6BEE00AFA8DA /* Sansation_Light.ttf */,
+				B527BF30281F6BC300AFA8DA /* NotoSans-Bold.ttf */,
+				B527BF32281F6BC400AFA8DA /* NotoSans-Regular.ttf */,
+				B527BF31281F6BC400AFA8DA /* NotoSans-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -235,7 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B527BF33281F6BC400AFA8DA /* NotoSans-Bold.ttf in Resources */,
 				B527BF18281F614D00AFA8DA /* Preview Assets.xcassets in Resources */,
+				B527BF37281F6BEE00AFA8DA /* Sansation_Light.ttf in Resources */,
+				B527BF35281F6BC400AFA8DA /* NotoSans-Regular.ttf in Resources */,
+				B527BF34281F6BC400AFA8DA /* NotoSans-SemiBold.ttf in Resources */,
 				B527BF15281F614D00AFA8DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */,
+				B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */,
 				B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */,
 				B527BF13281F614C00AFA8DA /* ContentView.swift in Sources */,
 				B527BF11281F614C00AFA8DA /* Just_A_GuideApp.swift in Sources */,
@@ -383,6 +405,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Just-A-Guide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Just-A-Guide/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -411,6 +434,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Just-A-Guide/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Just-A-Guide/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
