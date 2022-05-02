@@ -13,8 +13,7 @@ struct Just_A_GuideApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            FactoryView()
         }
     }
 }

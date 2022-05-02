@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B527BF11281F614C00AFA8DA /* Just_A_GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF10281F614C00AFA8DA /* Just_A_GuideApp.swift */; };
-		B527BF13281F614C00AFA8DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF12281F614C00AFA8DA /* ContentView.swift */; };
 		B527BF15281F614D00AFA8DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B527BF14281F614D00AFA8DA /* Assets.xcassets */; };
 		B527BF18281F614D00AFA8DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B527BF17281F614D00AFA8DA /* Preview Assets.xcassets */; };
 		B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF19281F614D00AFA8DA /* Persistence.swift */; };
@@ -20,12 +19,12 @@
 		B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF39281F6C7000AFA8DA /* Font+Extension.swift */; };
 		B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF3C281F737900AFA8DA /* Color+Extension.swift */; };
 		B527BF3F281F7A4900AFA8DA /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF3E281F7A4900AFA8DA /* ImageLiteral.swift */; };
+		B527BF41281F816300AFA8DA /* FactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF40281F816300AFA8DA /* FactoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B527BF0D281F614C00AFA8DA /* Just-A-Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just-A-Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B527BF10281F614C00AFA8DA /* Just_A_GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_A_GuideApp.swift; sourceTree = "<group>"; };
-		B527BF12281F614C00AFA8DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B527BF14281F614D00AFA8DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B527BF17281F614D00AFA8DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B527BF19281F614D00AFA8DA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		B527BF39281F6C7000AFA8DA /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		B527BF3C281F737900AFA8DA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B527BF3E281F7A4900AFA8DA /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		B527BF40281F816300AFA8DA /* FactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				B527BF10281F614C00AFA8DA /* Just_A_GuideApp.swift */,
-				B527BF12281F614C00AFA8DA /* ContentView.swift */,
 				B527BF2F281F677600AFA8DA /* MyComponent */,
 				B527BF2E281F677000AFA8DA /* Canvas */,
 				B527BF2D281F666900AFA8DA /* Factory */,
@@ -182,6 +181,7 @@
 		B527BF2D281F666900AFA8DA /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				B527BF40281F816300AFA8DA /* FactoryView.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -279,8 +279,8 @@
 				B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */,
 				B527BF3F281F7A4900AFA8DA /* ImageLiteral.swift in Sources */,
 				B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */,
-				B527BF13281F614C00AFA8DA /* ContentView.swift in Sources */,
 				B527BF11281F614C00AFA8DA /* Just_A_GuideApp.swift in Sources */,
+				B527BF41281F816300AFA8DA /* FactoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
