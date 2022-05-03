@@ -8,31 +8,31 @@
 import SwiftUI
 
 extension Color {
-    static var gray001: Color {
+    static var gray100: Color {
         return Color(hex: "#F3F3F3")
     }
     
-    static var gray002: Color {
+    static var gray200: Color {
         return Color(hex: "#868686")
     }
     
-    static var gray003: Color {
+    static var gray300: Color {
         return Color(hex: "#949494")
     }
     
-    static var gray004: Color {
+    static var gray400: Color {
         return Color(hex: "#DADADA")
     }
     
-    static var gray005: Color {
+    static var gray500: Color {
         return Color(hex: "#4B4B4B")
     }
     
-    static var gray006: Color {
+    static var gray600: Color {
         return Color(hex: "#A6A6A6")
     }
     
-    static var gray007: Color {
+    static var gray700: Color {
         return Color(hex: "#787878")
     }
     

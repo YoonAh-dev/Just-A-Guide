@@ -36,7 +36,7 @@ extension FactoryToolbar {
                 .font(.init(uiFont: .font(.bold, ofSize: 27)))
                 .foregroundColor(.primary)
             ImageLiteral.iconDownArrow
-                .foregroundColor(.gray007)
+                .foregroundColor(.gray700)
                 .padding(.leading, -10)
                 .padding(.bottom, -5)
         })
@@ -47,7 +47,7 @@ extension FactoryToolbar {
             print("Change Apparance Mode ")
         }, label: {
             Image(systemName: "sun.max.fill")
-                .foregroundColor(.gray006)
+                .foregroundColor(.gray600)
         })
     }
     
@@ -56,7 +56,7 @@ extension FactoryToolbar {
             print("Show more menus")
         }, label: {
             Image(systemName: "ellipsis.circle")
-                .foregroundColor(.gray006)
+                .foregroundColor(.gray600)
         })
     }
     

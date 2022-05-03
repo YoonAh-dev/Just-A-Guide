@@ -9,15 +9,22 @@ import SwiftUI
 
 struct FactoryView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .toolbar {
-                FactoryToolbar()
+        ZStack {
+            VStack {
+                FactorySpace()
+                    .frame(height: 184)
+                FactoryAttributeView()
             }
+        }
+        .foregroundColor(.init(uiColor: .systemBackground))
+        .toolbar {
+            FactoryToolbar()
+        }
     }
 }
 
 extension FactoryView {
-
+    
 }
 
 struct FactoryView_Previews: PreviewProvider {
