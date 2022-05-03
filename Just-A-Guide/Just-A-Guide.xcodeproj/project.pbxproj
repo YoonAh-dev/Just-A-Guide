@@ -20,6 +20,7 @@
 		B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF3C281F737900AFA8DA /* Color+Extension.swift */; };
 		B527BF3F281F7A4900AFA8DA /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF3E281F7A4900AFA8DA /* ImageLiteral.swift */; };
 		B527BF41281F816300AFA8DA /* FactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF40281F816300AFA8DA /* FactoryView.swift */; };
+		B527BF432820CDBC00AFA8DA /* FactoryToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF422820CDBC00AFA8DA /* FactoryToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B527BF3C281F737900AFA8DA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B527BF3E281F7A4900AFA8DA /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		B527BF40281F816300AFA8DA /* FactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryView.swift; sourceTree = "<group>"; };
+		B527BF422820CDBC00AFA8DA /* FactoryToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +183,8 @@
 		B527BF2D281F666900AFA8DA /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				B527BF40281F816300AFA8DA /* FactoryView.swift */,
+				B527BF452820CDC000AFA8DA /* Component */,
+				B527BF442820CDBE00AFA8DA /* View */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -198,6 +201,22 @@
 			children = (
 			);
 			path = MyComponent;
+			sourceTree = "<group>";
+		};
+		B527BF442820CDBE00AFA8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF40281F816300AFA8DA /* FactoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B527BF452820CDC000AFA8DA /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B527BF422820CDBC00AFA8DA /* FactoryToolbar.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +295,7 @@
 			files = (
 				B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */,
 				B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */,
+				B527BF432820CDBC00AFA8DA /* FactoryToolbar.swift in Sources */,
 				B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */,
 				B527BF3F281F7A4900AFA8DA /* ImageLiteral.swift in Sources */,
 				B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */,
