@@ -28,6 +28,14 @@ extension Color {
         return Color(hex: "#4B4B4B")
     }
     
+    static var gray006: Color {
+        return Color(hex: "#A6A6A6")
+    }
+    
+    static var gray007: Color {
+        return Color(hex: "#787878")
+    }
+    
     static var mainPurple: Color {
         return Color(hex: "#8D8EE8")
     }

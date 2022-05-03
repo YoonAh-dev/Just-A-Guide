@@ -13,7 +13,9 @@ struct Just_A_GuideApp: App {
 
     var body: some Scene {
         WindowGroup {
-            FactoryView()
+            NavigationView {
+                FactoryView()
+            }
         }
     }
 }

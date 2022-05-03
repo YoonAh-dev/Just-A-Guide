@@ -19,6 +19,6 @@ enum ImageLiteral {
     
     // MARK: - icon
     
-    static var btnSample3: Image = Image("img_lock")
+    static var iconDownArrow: Image = Image("iconDownArrow")
     
 }
