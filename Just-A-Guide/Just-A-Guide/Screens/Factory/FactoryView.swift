@@ -16,16 +16,8 @@ struct FactoryView: View {
                 }
                 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        print("hello")
-                    }, label: {
-                        Image(systemName: "circle.fill")
-                    })
-                    Button(action: {
-                        print("hello")
-                    }, label: {
-                        Image(systemName: "circle.fill")
-                    })
+                    apparanceModeButton
+                    moreButton
                 }
             }
     }
@@ -43,6 +35,24 @@ extension FactoryView {
                 .foregroundColor(.gray007)
                 .padding(.leading, -10)
                 .padding(.bottom, -5)
+        })
+    }
+    
+    var apparanceModeButton: some View {
+        Button(action: {
+            print("Change Apparance Mode ")
+        }, label: {
+            Image(systemName: "sun.max.fill")
+                .foregroundColor(.gray006)
+        })
+    }
+    
+    var moreButton: some View {
+        Button(action: {
+            print("Show more menus")
+        }, label: {
+            Image(systemName: "ellipsis.circle")
+                .foregroundColor(.gray006)
         })
     }
 }
