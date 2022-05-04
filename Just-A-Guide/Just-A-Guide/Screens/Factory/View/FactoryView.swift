@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct FactoryView: View {
+    
+    // MARK: - property
+    
+    @State private var selectedComponentIndex: Int = 0
+    
     var body: some View {
         ZStack {
             VStack {
@@ -18,7 +23,7 @@ struct FactoryView: View {
         }
         .foregroundColor(.init(uiColor: .systemBackground))
         .toolbar {
-            FactoryToolbar()
+            FactoryToolbar(selectedComponentIndex: $selectedComponentIndex)
         }
     }
 }

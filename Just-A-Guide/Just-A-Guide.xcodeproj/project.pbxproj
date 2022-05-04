@@ -24,6 +24,7 @@
 		B527BF472820D5BE00AFA8DA /* FactoryAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF462820D5BE00AFA8DA /* FactoryAttributeView.swift */; };
 		B527BF492820D78200AFA8DA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF482820D78200AFA8DA /* View+Extension.swift */; };
 		B527BF4B2820D8E800AFA8DA /* FactorySpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */; };
+		B527BF4F282209A800AFA8DA /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF4E282209A800AFA8DA /* UIComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B527BF462820D5BE00AFA8DA /* FactoryAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryAttributeView.swift; sourceTree = "<group>"; };
 		B527BF482820D78200AFA8DA /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySpace.swift; sourceTree = "<group>"; };
+		B527BF4E282209A800AFA8DA /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		B527BF27281F655A00AFA8DA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B527BF4E282209A800AFA8DA /* UIComponents.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B527BF4B2820D8E800AFA8DA /* FactorySpace.swift in Sources */,
+				B527BF4F282209A800AFA8DA /* UIComponents.swift in Sources */,
 				B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */,
 				B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */,
 				B527BF492820D78200AFA8DA /* View+Extension.swift in Sources */,

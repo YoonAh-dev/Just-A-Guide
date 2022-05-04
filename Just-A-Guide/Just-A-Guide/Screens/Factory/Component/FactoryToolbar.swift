@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct FactoryToolbar: ToolbarContent {
+    
+    // MARK: - property
+    
+    @Binding var selectedComponentIndex: Int
+    
     var body: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
-            componentMenuButton
+            componentMenu
         }
         
         ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -29,17 +34,29 @@ struct FactoryToolbar: ToolbarContent {
 
 extension FactoryToolbar {
     private var componentMenuButton: some View {
-        Button(action: {
-            print("Select Navigation Bar leading Button")
-        }, label: {
-            Text("Button")
+        HStack {
+            Text(uiComponents[$selectedComponentIndex.wrappedValue])
                 .font(.init(uiFont: .font(.bold, ofSize: 27)))
                 .foregroundColor(.primary)
             ImageLiteral.iconDownArrow
                 .foregroundColor(.gray700)
                 .padding(.leading, -10)
-                .padding(.bottom, -5)
-        })
+                .padding(.bottom, -7)
+        }
+    }
+    
+    private var componentMenu: some View {
+        Menu {
+            Picker(selection: $selectedComponentIndex, content: {
+                ForEach(uiComponents.indices, id: \.self, content: { id in
+                    Text("\(uiComponents[id])").tag(id)
+                })
+            }, label: {
+                Text("select UI Component")
+            })
+        } label: {
+            componentMenuButton
+        }
     }
     
     private var apparanceModeButton: some View {
