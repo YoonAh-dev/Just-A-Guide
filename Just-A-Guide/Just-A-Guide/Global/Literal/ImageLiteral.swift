@@ -20,5 +20,9 @@ enum ImageLiteral {
     // MARK: - icon
     
     static var iconDownArrow: Image = Image("iconDownArrow")
+    static var iconAddComponent: Image = Image("iconAddComponent")
+    static var iconSave: Image = Image("iconSave")
+    static var iconSquarebrackets: Image = Image("iconSquarebrackets")
+    static var iconViewmodifier: Image = Image("iconViewModifier")
     
 }

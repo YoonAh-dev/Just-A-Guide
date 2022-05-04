@@ -20,7 +20,7 @@ struct FactoryToolbar: ToolbarContent {
         
         ToolbarItemGroup(placement: .navigationBarTrailing) {
             apparanceModeButton
-            moreButton
+            moreMenu
         }
         
         ToolbarItemGroup(placement: .bottomBar) {
@@ -45,20 +45,6 @@ extension FactoryToolbar {
         }
     }
     
-    private var componentMenu: some View {
-        Menu {
-            Picker(selection: $selectedComponentIndex, content: {
-                ForEach(uiComponents.indices, id: \.self, content: { id in
-                    Text("\(uiComponents[id])").tag(id)
-                })
-            }, label: {
-                Text("select UI Component")
-            })
-        } label: {
-            componentMenuButton
-        }
-    }
-    
     private var apparanceModeButton: some View {
         Button(action: {
             print("Change Apparance Mode ")
@@ -69,12 +55,8 @@ extension FactoryToolbar {
     }
     
     private var moreButton: some View {
-        Button(action: {
-            print("Show more menus")
-        }, label: {
-            Image(systemName: "ellipsis.circle")
-                .foregroundColor(.gray600)
-        })
+        Image(systemName: "ellipsis.circle")
+            .foregroundColor(.gray600)
     }
     
     private var saveComponentButton: some View {
@@ -97,5 +79,55 @@ extension FactoryToolbar {
                 .foregroundColor(.darkPurple)
                 .font(.system(size: 15))
         })
+    }
+    
+    private var factoryFunctionSection: some View {
+        Section {
+            Button {} label: {
+                Label("Copy Code", image: "iconSquarebrackets")
+                    .imageScale(.large)
+            }
+            
+            Button {} label: {
+                Label("Make View Modifier", image: "iconViewModifier")
+            }
+            
+            Button {} label: {
+                Label("Component Lists", image: "iconSave")
+            }
+            
+            Button {} label: {
+                Label("Canvas", image: "iconAddComponent")
+            }
+        }
+    }
+    
+    private var webViewSection: some View {
+        Section {
+            Button("Human Interface Guidelines", action: {})
+        }
+    }
+    
+    private var componentMenu: some View {
+        Menu {
+            Picker(selection: $selectedComponentIndex, content: {
+                ForEach(uiComponents.indices, id: \.self, content: { id in
+                    Text("\(uiComponents[id])").tag(id)
+                })
+            }, label: {
+                Text("select UI Component")
+            })
+        } label: {
+            componentMenuButton
+        }
+    }
+    
+    private var moreMenu: some View {
+        Menu {
+            factoryFunctionSection
+            webViewSection
+        } label: {
+            moreButton
+        }
     }
 }
