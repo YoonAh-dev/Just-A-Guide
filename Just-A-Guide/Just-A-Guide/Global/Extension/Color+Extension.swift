@@ -51,6 +51,10 @@ extension Color {
     static var darkPurple: Color {
         return Color(hex: "#878BE2")
     }
+    
+    static var darkBackground: Color {
+        return Color(hex: "3A3A3A")
+    }
 }
 
 extension Color {

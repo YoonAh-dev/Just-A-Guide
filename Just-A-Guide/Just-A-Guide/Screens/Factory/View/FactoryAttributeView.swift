@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct FactoryAttributeView: View {
+    
+    // MARK: - property
+    
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         ZStack {
-            Color.gray100
+            (colorScheme == .light) ? Color.gray100 : Color.darkBackground
             
             addingAttributeButton
         }
