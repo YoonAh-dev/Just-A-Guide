@@ -16,6 +16,9 @@ struct UIComponentSpacerView: View {
     
     @State private var celsius: Float = 0
     @State private var typedText = ""
+    @State private var cornerRadius: CGFloat = 10.0
+    @State private var strokeColor: Color = .primary
+    @State private var lineWidth: CGFloat = 1.0
 
     var body: some View {
         VStack {
@@ -42,7 +45,9 @@ struct UIComponentSpacerView: View {
             case .textField:
                 TextField("Text", text: $typedText)
                     .foregroundColor(.primary)
-                    .textFieldStyle(.plain)
+                    .textFieldStyle(FactoryTextFieldStyle(cornerRadius: $cornerRadius,
+                                                          strokeColor: $strokeColor,
+                                                          lineWidth: $lineWidth))
                     .padding(.horizontal, 50)
             default:
                 Spacer()

@@ -18,9 +18,8 @@ struct UIComponentAttributeView: View {
             VStack {
                 switch uiComponents[$selectedComponent.wrappedValue] {
                 case .button:
-                    Text("button")
-                        .foregroundColor(.primary)
-                        .padding(.vertical, 20)
+                    FactoryTextFieldBox()
+                        .padding(.horizontal, 25)
                 case .slider:
                     Text("slider")
                         .foregroundColor(.primary)
@@ -38,7 +37,7 @@ struct UIComponentAttributeView: View {
                 
                 Spacer()
             }
-            .padding(.vertical, 30)
+            .padding(.top, 40)
             .frame(maxWidth: .infinity)
         }
     }
