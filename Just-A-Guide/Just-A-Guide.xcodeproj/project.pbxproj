@@ -26,6 +26,8 @@
 		B527BF4B2820D8E800AFA8DA /* FactorySpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */; };
 		B527BF4F282209A800AFA8DA /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF4E282209A800AFA8DA /* UIComponents.swift */; };
 		B527BF5628240FFE00AFA8DA /* ColorSchemeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF5528240FFE00AFA8DA /* ColorSchemeModifier.swift */; };
+		B527BF58282428FA00AFA8DA /* UIComponentSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF57282428FA00AFA8DA /* UIComponentSpacerView.swift */; };
+		B527BF5A2824295000AFA8DA /* UIComponentAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF592824295000AFA8DA /* UIComponentAttributeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySpace.swift; sourceTree = "<group>"; };
 		B527BF4E282209A800AFA8DA /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
 		B527BF5528240FFE00AFA8DA /* ColorSchemeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorSchemeModifier.swift; path = "Just-A-Guide/Global/ColorSchemeModifier.swift"; sourceTree = SOURCE_ROOT; };
+		B527BF57282428FA00AFA8DA /* UIComponentSpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentSpacerView.swift; path = "Just-A-Guide/Global/UIComponentSpacerView.swift"; sourceTree = SOURCE_ROOT; };
+		B527BF592824295000AFA8DA /* UIComponentAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentAttributeView.swift; path = "Just-A-Guide/Global/UIComponentAttributeView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				B527BF5528240FFE00AFA8DA /* ColorSchemeModifier.swift */,
+				B527BF57282428FA00AFA8DA /* UIComponentSpacerView.swift */,
+				B527BF592824295000AFA8DA /* UIComponentAttributeView.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -320,7 +326,9 @@
 				B527BF1A281F614D00AFA8DA /* Persistence.swift in Sources */,
 				B527BF472820D5BE00AFA8DA /* FactoryAttributeView.swift in Sources */,
 				B527BF11281F614C00AFA8DA /* Just_A_GuideApp.swift in Sources */,
+				B527BF58282428FA00AFA8DA /* UIComponentSpacerView.swift in Sources */,
 				B527BF41281F816300AFA8DA /* FactoryView.swift in Sources */,
+				B527BF5A2824295000AFA8DA /* UIComponentAttributeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

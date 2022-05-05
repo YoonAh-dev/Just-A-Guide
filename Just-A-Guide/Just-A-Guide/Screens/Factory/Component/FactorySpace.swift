@@ -16,7 +16,7 @@ struct FactorySpace: View {
     
     var body: some View {
         ZStack {
-            UIComponentSwitchView(selectedComponent: $selectedComponentIndex,
+            UIComponentSpacerView(selectedComponent: $selectedComponentIndex,
                                   selectedBorderColor: $selectedBorderColor)
         }
     }

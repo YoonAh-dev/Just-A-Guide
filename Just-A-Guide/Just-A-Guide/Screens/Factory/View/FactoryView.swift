@@ -21,7 +21,7 @@ struct FactoryView: View {
                 FactorySpace(selectedComponentIndex: $selectedComponentIndex,
                              selectedBorderColor: $selectedBorderColor)
                     .frame(height: 184)
-                FactoryAttributeView()
+                FactoryAttributeView(selectedComponentIndex: $selectedComponentIndex)
             }
         }
         .foregroundColor(.init(uiColor: .systemBackground))

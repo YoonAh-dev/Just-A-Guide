@@ -13,11 +13,15 @@ struct FactoryAttributeView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    @Binding var selectedComponentIndex: Int
+    
     var body: some View {
         ZStack {
             (colorScheme == .light) ? Color.gray100 : Color.darkBackground
             
             addingAttributeButton
+            
+            UIComponentAttributeView(selectedComponent: $selectedComponentIndex)
         }
         .border(.ultraThickMaterial, width: 1)
         .cornerRadius(20, corners: [.topLeft, .topRight])
@@ -43,11 +47,5 @@ extension FactoryAttributeView {
             
             Spacer()
         }
-    }
-}
-
-struct FactoryAttributeView_Previews: PreviewProvider {
-    static var previews: some View {
-        FactoryAttributeView()
     }
 }
