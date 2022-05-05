@@ -30,7 +30,8 @@ struct UIComponentSwitchView: View {
     @Binding var selectedComponent: Int
     @Binding var selectedBorderColor: Color
     
-    @State var celsius: Float = 0
+    @State private var celsius: Float = 0
+    @State private var typedText = ""
 
     var body: some View {
         VStack {
@@ -54,6 +55,11 @@ struct UIComponentSwitchView: View {
                     .resizable()
                     .frame(width: 300, height: 200)
                     .scaledToFill()
+            case .textField:
+                TextField("Text", text: $typedText)
+                    .foregroundColor(.primary)
+                    .textFieldStyle(.plain)
+                    .padding(.horizontal, 50)
             default:
                 Spacer()
             }
