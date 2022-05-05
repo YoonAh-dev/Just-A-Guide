@@ -31,16 +31,19 @@ struct UIComponentAttributeView: View {
                         .padding(.top, 20)
                         .padding(.leading, 30)
                 case .slider:
-                    Text("slider")
-                        .foregroundColor(.primary)
+                    FactoryColorBox()
+                        .padding(.horizontal, 25)
+                        .padding(.trailing, 5)
                 case .image:
-                    ImageLiteral.imgTree
-                        .resizable()
-                        .frame(width: 300, height: 200)
-                        .scaledToFill()
+                    Spacer()
                 case .textField:
-                    Text("textfield")
-                        .foregroundColor(.primary)
+                    FactoryTextFieldBox()
+                        .padding(.horizontal, 25)
+                        .padding(.bottom, 29)
+                    Divider()
+                    FactoryColorBox()
+                        .padding(.top, 20)
+                        .padding(.leading, 30)
                 default:
                     Spacer()
                 }
