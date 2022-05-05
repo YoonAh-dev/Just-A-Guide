@@ -11,6 +11,7 @@ struct FactoryView: View {
     
     // MARK: - property
     
+    @Environment(\.colorScheme) var colorScheme
     @State private var selectedComponentIndex: Int = 0
     
     var body: some View {
@@ -25,6 +26,8 @@ struct FactoryView: View {
         .toolbar {
             FactoryToolbar(selectedComponentIndex: $selectedComponentIndex)
         }
+        .modifier(ColorSchemeModifier(colorScheme: colorScheme))
+
     }
 }
 

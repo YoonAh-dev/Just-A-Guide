@@ -25,6 +25,7 @@
 		B527BF492820D78200AFA8DA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF482820D78200AFA8DA /* View+Extension.swift */; };
 		B527BF4B2820D8E800AFA8DA /* FactorySpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */; };
 		B527BF4F282209A800AFA8DA /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF4E282209A800AFA8DA /* UIComponents.swift */; };
+		B527BF5628240FFE00AFA8DA /* ColorSchemeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF5528240FFE00AFA8DA /* ColorSchemeModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B527BF482820D78200AFA8DA /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySpace.swift; sourceTree = "<group>"; };
 		B527BF4E282209A800AFA8DA /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		B527BF5528240FFE00AFA8DA /* ColorSchemeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorSchemeModifier.swift; path = "Just-A-Guide/Global/ColorSchemeModifier.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		B527BF29281F65CF00AFA8DA /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				B527BF5528240FFE00AFA8DA /* ColorSchemeModifier.swift */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				B527BF4F282209A800AFA8DA /* UIComponents.swift in Sources */,
 				B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */,
 				B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */,
+				B527BF5628240FFE00AFA8DA /* ColorSchemeModifier.swift in Sources */,
 				B527BF492820D78200AFA8DA /* View+Extension.swift in Sources */,
 				B527BF432820CDBC00AFA8DA /* FactoryToolbar.swift in Sources */,
 				B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */,

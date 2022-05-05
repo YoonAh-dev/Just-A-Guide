@@ -11,7 +11,10 @@ struct FactoryToolbar: ToolbarContent {
     
     // MARK: - property
     
+    @AppStorage("selectedAppearance") var selectedAppearance = 0
     @Binding var selectedComponentIndex: Int
+    
+    var utilities = Utilities()
     
     var body: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
@@ -23,6 +26,7 @@ struct FactoryToolbar: ToolbarContent {
             moreMenu
         }
         
+        
         ToolbarItemGroup(placement: .bottomBar) {
             saveComponentButton
                 .padding(.leading, -10)
@@ -32,6 +36,7 @@ struct FactoryToolbar: ToolbarContent {
     }
 }
 
+// MARK: - UI Components
 extension FactoryToolbar {
     private var componentMenuButton: some View {
         HStack {
@@ -47,10 +52,13 @@ extension FactoryToolbar {
     
     private var apparanceModeButton: some View {
         Button(action: {
-            print("Change Apparance Mode ")
+            selectedAppearance = (selectedAppearance == 1) ? 2 : 1
         }, label: {
-            Image(systemName: "sun.max.fill")
+            Image(systemName: (selectedAppearance == 1) ? "moon.fill" : "sun.max.fill")
                 .foregroundColor(.gray600)
+        })
+        .onChange(of: selectedAppearance, perform: { value in
+            utilities.overrideDisplayMode()
         })
     }
     

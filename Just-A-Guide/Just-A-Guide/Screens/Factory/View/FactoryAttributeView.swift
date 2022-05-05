@@ -25,6 +25,7 @@ struct FactoryAttributeView: View {
     }
 }
 
+// MARK: - UI Component
 extension FactoryAttributeView {
     private var addingAttributeButton: some View {
         VStack {
