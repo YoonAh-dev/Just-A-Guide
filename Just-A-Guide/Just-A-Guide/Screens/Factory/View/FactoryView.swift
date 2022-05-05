@@ -13,11 +13,12 @@ struct FactoryView: View {
     
     @Environment(\.colorScheme) var colorScheme
     @State private var selectedComponentIndex: Int = 0
+    @State private var selectedBorderColor: Color = .accentColor
     
     var body: some View {
         ZStack {
             VStack {
-                FactorySpace()
+                FactorySpace(selectedBorderColor: $selectedBorderColor)
                     .frame(height: 184)
                 FactoryAttributeView()
             }
