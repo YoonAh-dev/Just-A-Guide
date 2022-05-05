@@ -96,7 +96,7 @@ iOSInjectionProject/
 
 ### SwiftPackageManager ###
 Packages
-xcuserdata
+!*.xcuserdata
 #  *.xcodeproj
 
 
