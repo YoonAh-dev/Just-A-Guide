@@ -7,4 +7,18 @@
 
 import Foundation
 
-let uiComponents = ["Button", "Image", "Switch", "Alert", "Text", "Segment Control", "Slider", "Stepper", "Progress Bar", "Page Control", "Text Field"]
+enum UIComponent: String, CaseIterable {
+    case button = "Button"
+    case image = "Image"
+    case `switch` = "Switch"
+    case alert = "Alert"
+    case text = "Text"
+    case segmentControl = "Segment Control"
+    case slider = "Slider"
+    case stepper = "Stepper"
+    case progressBar = "Progress Bar"
+    case pageControl = "Page Control"
+    case textField = "TextField"
+}
+
+let uiComponents: [UIComponent] = UIComponent.allCases

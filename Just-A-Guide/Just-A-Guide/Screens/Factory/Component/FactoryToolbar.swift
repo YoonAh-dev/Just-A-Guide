@@ -40,7 +40,7 @@ struct FactoryToolbar: ToolbarContent {
 extension FactoryToolbar {
     private var componentMenuButton: some View {
         HStack {
-            Text(uiComponents[$selectedComponentIndex.wrappedValue])
+            Text(uiComponents[$selectedComponentIndex.wrappedValue].rawValue)
                 .font(.init(uiFont: .font(.bold, ofSize: 27)))
                 .foregroundColor(.primary)
             ImageLiteral.iconDownArrow
@@ -120,7 +120,7 @@ extension FactoryToolbar {
         Menu {
             Picker(selection: $selectedComponentIndex, content: {
                 ForEach(uiComponents.indices, id: \.self, content: { id in
-                    Text("\(uiComponents[id])").tag(id)
+                    Text("\(uiComponents[id].rawValue)").tag(id)
                 })
             }, label: {
                 Text("select UI Component")
