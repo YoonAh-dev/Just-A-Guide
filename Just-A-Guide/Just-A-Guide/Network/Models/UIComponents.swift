@@ -29,6 +29,8 @@ struct UIComponentSwitchView: View {
     
     @Binding var selectedComponent: Int
     @Binding var selectedBorderColor: Color
+    
+    @State var celsius: Float = 0
 
     var body: some View {
         VStack {
@@ -43,6 +45,15 @@ struct UIComponentSwitchView: View {
                         RoundedRectangle(cornerRadius: 15)
                             .stroke($selectedBorderColor.wrappedValue, lineWidth: 1)
                     )
+            case .slider:
+                Slider(value: $celsius, in: -100...100, step: 0.1)
+                    .padding(.horizontal, 20)
+                    .tint(.darkPurple)
+            case .image:
+                ImageLiteral.imgTree
+                    .resizable()
+                    .frame(width: 300, height: 200)
+                    .scaledToFill()
             default:
                 Spacer()
             }
