@@ -15,11 +15,21 @@ struct UIComponentAttributeView: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(alignment: .leading) {
                 switch uiComponents[$selectedComponent.wrappedValue] {
                 case .button:
                     FactoryTextFieldBox()
                         .padding(.horizontal, 25)
+                        .padding(.bottom, 29)
+                    Divider()
+                    FactorySystemStyleBox()
+                        .padding(.top, 20)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 29)
+                    Divider()
+                    FactoryColorBox()
+                        .padding(.top, 20)
+                        .padding(.leading, 30)
                 case .slider:
                     Text("slider")
                         .foregroundColor(.primary)

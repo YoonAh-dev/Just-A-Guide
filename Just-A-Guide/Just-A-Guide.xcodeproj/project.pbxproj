@@ -30,6 +30,9 @@
 		B527BF5A2824295000AFA8DA /* UIComponentAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF592824295000AFA8DA /* UIComponentAttributeView.swift */; };
 		B527BF5C28242D1900AFA8DA /* FactoryTextFieldBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF5B28242D1900AFA8DA /* FactoryTextFieldBox.swift */; };
 		B527BF5F28242F8200AFA8DA /* FactoryTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF5E28242F8200AFA8DA /* FactoryTextfieldStyle.swift */; };
+		B527BF612824326900AFA8DA /* FactorySystemStyleBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF602824326900AFA8DA /* FactorySystemStyleBox.swift */; };
+		B527BF63282433A800AFA8DA /* FactorySystemStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B527BF62282433A800AFA8DA /* FactorySystemStyleCell.swift */; };
+		B5DE033828243CBA00EF19D5 /* FactoryColorBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE033728243CBA00EF19D5 /* FactoryColorBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		B527BF592824295000AFA8DA /* UIComponentAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIComponentAttributeView.swift; path = "Just-A-Guide/Global/UIComponentAttributeView.swift"; sourceTree = SOURCE_ROOT; };
 		B527BF5B28242D1900AFA8DA /* FactoryTextFieldBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTextFieldBox.swift; sourceTree = "<group>"; };
 		B527BF5E28242F8200AFA8DA /* FactoryTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTextfieldStyle.swift; sourceTree = "<group>"; };
+		B527BF602824326900AFA8DA /* FactorySystemStyleBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySystemStyleBox.swift; sourceTree = "<group>"; };
+		B527BF62282433A800AFA8DA /* FactorySystemStyleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorySystemStyleCell.swift; sourceTree = "<group>"; };
+		B5DE033728243CBA00EF19D5 /* FactoryColorBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryColorBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +247,9 @@
 				B527BF422820CDBC00AFA8DA /* FactoryToolbar.swift */,
 				B527BF4A2820D8E800AFA8DA /* FactorySpace.swift */,
 				B527BF5B28242D1900AFA8DA /* FactoryTextFieldBox.swift */,
+				B527BF602824326900AFA8DA /* FactorySystemStyleBox.swift */,
+				B527BF62282433A800AFA8DA /* FactorySystemStyleCell.swift */,
+				B5DE033728243CBA00EF19D5 /* FactoryColorBox.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -332,9 +341,11 @@
 				B527BF4F282209A800AFA8DA /* UIComponents.swift in Sources */,
 				B527BF5F28242F8200AFA8DA /* FactoryTextfieldStyle.swift in Sources */,
 				B527BF1D281F614D00AFA8DA /* Just_A_Guide.xcdatamodeld in Sources */,
+				B527BF63282433A800AFA8DA /* FactorySystemStyleCell.swift in Sources */,
 				B527BF3D281F737900AFA8DA /* Color+Extension.swift in Sources */,
 				B527BF5628240FFE00AFA8DA /* ColorSchemeModifier.swift in Sources */,
 				B527BF492820D78200AFA8DA /* View+Extension.swift in Sources */,
+				B5DE033828243CBA00EF19D5 /* FactoryColorBox.swift in Sources */,
 				B527BF432820CDBC00AFA8DA /* FactoryToolbar.swift in Sources */,
 				B527BF3A281F6C7000AFA8DA /* Font+Extension.swift in Sources */,
 				B527BF3F281F7A4900AFA8DA /* ImageLiteral.swift in Sources */,
@@ -343,6 +354,7 @@
 				B527BF11281F614C00AFA8DA /* Just_A_GuideApp.swift in Sources */,
 				B527BF58282428FA00AFA8DA /* UIComponentSpacerView.swift in Sources */,
 				B527BF41281F816300AFA8DA /* FactoryView.swift in Sources */,
+				B527BF612824326900AFA8DA /* FactorySystemStyleBox.swift in Sources */,
 				B527BF5C28242D1900AFA8DA /* FactoryTextFieldBox.swift in Sources */,
 				B527BF5A2824295000AFA8DA /* UIComponentAttributeView.swift in Sources */,
 			);
