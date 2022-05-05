@@ -7,4 +7,4 @@
 
 import Foundation
 
-let uiComponents = ["Button", "Image", "Toolbar", "Alert", "Text", "Segment Control", "Slider", "Stepper", "Progress Bar", "Page Control", "Text Field"]
+let uiComponents = ["Button", "Image", "Switch", "Alert", "Text", "Segment Control", "Slider", "Stepper", "Progress Bar", "Page Control", "Text Field"]
