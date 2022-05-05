@@ -11,24 +11,13 @@ struct FactorySpace: View {
     
     // MARK: - property
     
+    @Binding var selectedComponentIndex: Int
     @Binding var selectedBorderColor: Color
     
     var body: some View {
         ZStack {
-            VStack {
-                Button(action: { }, label: {
-                    Text("Text")
-                })
-                    .padding()
-                    .foregroundColor(.primary)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke($selectedBorderColor.wrappedValue, lineWidth: 1)
-                    )
-                
-                Spacer()
-                    .frame(height: 50)
-            }
+            UIComponentSwitchView(selectedComponent: $selectedComponentIndex,
+                                  selectedBorderColor: $selectedBorderColor)
         }
     }
 }

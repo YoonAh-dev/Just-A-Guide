@@ -18,7 +18,8 @@ struct FactoryView: View {
     var body: some View {
         ZStack {
             VStack {
-                FactorySpace(selectedBorderColor: $selectedBorderColor)
+                FactorySpace(selectedComponentIndex: $selectedComponentIndex,
+                             selectedBorderColor: $selectedBorderColor)
                     .frame(height: 184)
                 FactoryAttributeView()
             }
